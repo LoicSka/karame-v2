@@ -1,0 +1,112 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./fonts.css";
+@import "./reset.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter-Regular', sans-serif;
+  --font-family-regular: 'Inter-Regular', sans-serif;
+  --font-family-bold: 'Inter-Bold', sans-serif;
+  --font-family-medium: 'Inter-Medium', sans-serif;
+  --font-family-semibold: 'Inter-Semibold', sans-serif;
+  --font-family-light: 'Inter-Light', sans-serif;
+  --blue: #009EFA;
+  --darkBlue: #0495EA;
+  --grey: #707F8A;
+  --orange: #F4A124;
+  --opalBlue: #012236;
+  --odeurYaBlue: #0075E1;
+  --leafGreen: #20B538;
+  --asphaltGray: #D0D6E0;
+  --red: #EC442A;
+  --darkRed: #C9402B;
+  --naijaGreen: #109B26;
+  --lightGrey: #F1F2F4;
+  --glazedOrange: #EA8C00;
+  --concreteGrey: #344B5B;
+  --redTransluscent: #FFEFED;
+  --blueTransluscent: #C5E9FF;
+  --opalBlueTransluscent: rgba(0, 39, 63, 0.42);
+  --greenTransluscent: #DCF7E0;
+  --naijaGreenTransluscent: rgba(46, 171, 66, 0.42);
+  --glazedOrangeTransluscent: rgba(234, 140, 0, 0.42);
+  --oceanBlueTransluscent: #D7ECFF;
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.text-primary {
+  color: var(--blue);
+}
+
+.text-primary {
+  color: var(--blue);
+}
+
+.text-default {
+  color: var(--opalBlue);
+}
+
+.bg-ocean-blue-trans {
+  background-color: var(--oceanBlueTransluscent);
+}
+
+.uc-icon {
+  font-family: 'unicons';
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* modal transition animations */
+
+.overlay-fade-enter {
+  opacity: 0.01;
+}
+
+.overlay-fade-enter-active {
+  opacity: 1;
+  transition: all 300ms;
+}
+
+.overlay-fade-exit {
+  opacity: 1;
+}
+
+.overlay-fade-exit-active {
+  opacity: 0.01;
+  transition: all 300ms;
+}
+
+.modal-enter {
+  opacity: 0.01;
+  transform: translateY(20px);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 100ms ease-in-out, ;
+}
+
+.modal-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.modal-exit-active {
+  opacity: 0.01;
+  transform: translateY(20px);
+  transition: all 100ms ease-in;
+}
