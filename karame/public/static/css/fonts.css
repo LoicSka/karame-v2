@@ -32,7 +32,7 @@
 @font-face {
 	font-family: 'Karame';
 	font-weight: normal;
-	src: local('☺'), url('../fonts/Karame.ttf') format('truetype');
+	src: local('☺'), url('../fonts/karame-stroke.ttf') format('truetype');
 }
 
 @font-face {
