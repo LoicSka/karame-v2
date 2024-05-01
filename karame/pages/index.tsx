@@ -88,7 +88,7 @@ const SettingsInput = styled.input `
 `
 
 
-export default function () {
+export default function Home() {
   const [textBoxState,
     setTextBoxState] = React.useState < {
     text: string,
